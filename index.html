@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>中芯国际 (688981.SH) - 近一年行情</title>
-<script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+<script src="https://unpkg.com/echarts@5.5.1/dist/echarts.min.js"></script>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
@@ -220,10 +220,10 @@ const klineOption = {
       type: 'candlestick',
       data: klineData,
       itemStyle: {
-        color: '#3fb950',       // 涨（收盘>=开盘）- 中国风格：红涨
-        color0: '#f85149',      // 跌（收盘<开盘）- 绿跌
-        borderColor: '#3fb950',
-        borderColor0: '#f85149'
+        color: '#f85149',       // 阳线（收盘>=开盘）中国风格：红涨
+        color0: '#3fb950',     // 阴线（收盘<开盘）中国风格：绿跌
+        borderColor: '#f85149',
+        borderColor0: '#3fb950'
       }
     },
     // MA5
